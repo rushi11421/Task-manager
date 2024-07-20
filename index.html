@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar@5.11.3/main.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="myTask.html">My Task</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Log out</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h1>Hello Max</h1>
+                <input type="text" placeholder="Search...">
+            </header>
+            <section class="dashboard">
+                <div class="projects">
+                    <h2>Projects</h2>
+                    <ul id="project-list">
+                        <li>UX/UI Design <button onclick="removeProject(this)">Remove</button></li>
+                        <li>Art and Sketch <button onclick="removeProject(this)">Remove</button></li>
+                        <li>Marketing Ads <button onclick="removeProject(this)">Remove</button></li>
+                    </ul>
+                    <input type="text" id="new-project" placeholder="New project">
+                    <button onclick="addProject()">Add Project</button>
+                </div>
+                <div class="tasks">
+                    <h2>My Task</h2>
+                    <ul id="task-list">
+                        <li><input type="checkbox" onclick="completeTask(this)"> Create Wireframe <button onclick="removeTask(this)">Remove</button></li>
+                        <li><input type="checkbox" onclick="completeTask(this)"> Stock Logo Design <button onclick="removeTask(this)">Remove</button></li>
+                        <li><input type="checkbox" onclick="completeTask(this)"> Dashboard Design <button onclick="removeTask(this)">Remove</button></li>
+                    </ul>
+                    <input type="text" id="new-task" placeholder="New task">
+                    <button onclick="addTask()">Add Task</button>
+                </div>
+                <div class="calendar">
+                    <h2>Calendar</h2>
+                    <div id="calendar"></div>
+                </div>
+                <div class="messages">
+                    <h2>Messages</h2>
+                    <ul>
+                        <li>Julie Pinto: Do you need that design</li>
+                        <li>Charli Mathew: Awesome !!</li>
+                        <li>Hs Harward: Hi Shreya ! How are you ?</li>
+                        <li>Soloni Grish: What is the price of hourly ..</li>
+                    </ul>
+                </div>
+                <div class="statistics">
+                    <h2>Statistics</h2>
+                    <div id="completion-message"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar@5.11.3/main.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

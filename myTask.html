@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="myTask.html">My Task</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Log out</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h1>My Task</h1>
+            </header>
+            <section class="dashboard">
+                <div class="tasks">
+                    <h2>My Task</h2>
+                    <ul id="task-list">
+                        <li><input type="checkbox"> Create Wireframe</li>
+                        <li><input type="checkbox"> Stock Logo Design</li>
+                        <li><input type="checkbox"> Dashboard Design</li>
+                    </ul>
+                    <input type="text" id="new-task" placeholder="New task">
+                    <button onclick="addTask()">Add Task</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="myTask.html">My Task</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Log out</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h1>Projects</h1>
+            </header>
+            <section class="dashboard">
+                <div class="projects">
+                    <h2>Project</h2>
+                    <ul id="project-list">
+                        <li>UX/UI Design</li>
+                        <li>Art and Sketch</li>
+                        <li>Marketing Ads</li>
+                    </ul>
+                    <input type="text" id="new-project" placeholder="New project">
+                    <button onclick="addProject()">Add Project</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

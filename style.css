@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1d1d1d;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2d2d2d;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    color: #ff6b6b;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header input {
+    padding: 10px;
+    border: none;
+    border-radius: px;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dashboard > div {
+    background-color: #2d2d2d;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1 1 30%;
+}
+
+.dashboard h2 {
+    color: #ff6b6b;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* Add these styles to your existing CSS */
+
+input[type="text"] {
+    padding: 5px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    width: calc(100% - 12px); /* Adjusting for padding and border */
+}
+
+button {
+    padding: 5px 10px;
+    margin-top: 5px;
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4b4b;
+}
